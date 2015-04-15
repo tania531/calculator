@@ -17,14 +17,14 @@ function getKeyInput(event){
     addKeyNumbers();
   } else if (k === '*'){
     multKeyNumbers();
+  } else {
+    inputKeys.push(k);
   }
-  inputKeys.push(k);
 
   inputKeyVals();
 }
 
 function inputKeyVals(){
-  //alert('inputkeyvales');
   $('#display').text('Numbers:');
   inputKeys.forEach(function(n){
     n = n*1;
